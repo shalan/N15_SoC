@@ -53,6 +53,8 @@ dkms.conf
 
 #macOS
 .DS_Store
+RTL/.DS_Store
+DV/.DS_Store
 .code-workspace
 
 #verilog tmp files
