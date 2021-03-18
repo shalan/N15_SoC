@@ -21,7 +21,7 @@
 `timescale          1ns/1ps
 `default_nettype    none
 
-`include            "../rtl/Peripherals/ip_util.vh"
+`include            "../RTL/Peripherals/rtl/ip_util.vh"
 
 /*
     N15 SoC top level

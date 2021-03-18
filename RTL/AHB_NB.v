@@ -19,10 +19,10 @@
 	limitations under the License.
 */
 
-`timescale                  1ns/1ps
-`default_nettype            none
+`timescale          1ns/1ps
+`default_nettype    none
 
-`include "../rtl/ahb_util.vh"
+`include            "./include/ahb_util.vh"
 
 /*
     NB (AHB BUS) Components

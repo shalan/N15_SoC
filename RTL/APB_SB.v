@@ -2,7 +2,7 @@
          _  _ _ ___   ___       ___ 
         | \| / | __| / __| ___ / __|
         | .` | |__ \ \__ \/ _ \ (__ 
-        |_|\_|_|___/ |___/\___/\___|
+        |_|\_|_|___/ |___/\___/\___|                            
         Copyright 2020 Mohamed Shalan
 
         Licensed under the Apache License, Version 2.0 (the "License"); 
@@ -21,8 +21,8 @@
 `timescale          1ns/1ps
 `default_nettype    none
 
-`include            "../rtl/apb_util.vh"
-`include            "../rtl/Peripherals/ip_util.vh"
+`include            "./include/apb_util.vh"
+`include            "./ip_util.vh"
 
 /*
     APB South Bridge. Up to 16 peripherals.
