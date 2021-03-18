@@ -19,9 +19,9 @@
 	limitations under the License.
 */
 
-`timescale                  1ns/1ps
-`default_nettype            none
-`include "../rtl/ahb_util.vh"
+`timescale              1ns/1ps
+`default_nettype        none
+`include                "./include/ahb_util.vh"
 
 module AHB_GPIO_PORT #(parameter SZ=8) (
     input  wire        HCLK,    
