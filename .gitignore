@@ -54,3 +54,8 @@ dkms.conf
 #macOS
 .DS_Store
 .code-workspace
+
+#verilog tmp files
+.vcd
+.out
+.vvp
