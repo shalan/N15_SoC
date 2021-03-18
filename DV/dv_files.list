@@ -1,0 +1,15 @@
+#TB Specific files
+n15_soc_tb.v 
+sst26wf080b.v 
+
+# change these to point to the library cell models
+./pdk/hd_functional.v 
+./pdk/hd_primitives.v
+
++incdir+../RTL/SoCBUS/
++incdir+../RTL/Peripherals/rtl/
+-y ../RTL/SoCBUS/
+-y ../RTL/Peripherals/rtl/
+-y ../RTL/
+
+../RTL/NfiVe32.v
