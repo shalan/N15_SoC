@@ -1,0 +1,6 @@
+[submodule "Peripherals"]
+	path = Peripherals
+	url = git@github.com:shalan/N5_SoC_Peripherals.git
+[submodule "SoCBUS"]
+	path = SoCBUS
+	url = git@github.com:shalan/SoCBUS.git
