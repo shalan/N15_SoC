@@ -4,3 +4,9 @@
 [submodule "SoCBUS"]
 	path = SoCBUS
 	url = git@github.com:shalan/SoCBUS.git
+[submodule "RTL/SoCBUS"]
+	path = RTL/SoCBUS
+	url = git@github.com:shalan/SoCBUS.git
+[submodule "RTL/Peripherals"]
+	path = RTL/Peripherals
+	url = git@github.com:shalan/N5_SoC_Peripherals.git
