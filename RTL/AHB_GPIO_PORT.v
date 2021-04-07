@@ -39,12 +39,12 @@ module AHB_GPIO_PORT #(parameter SZ=8) (
 	output wire [SZ-1:0] GPIO_OE
 );
     localparam  GPIO_OUT_OFF   =   8'h00, 
-                GPIO_DATA_OFF   =   8'h0,
-                GPIO_PU_OFF    =   8'h04, 
-                GPIO_PD_OFF    =   8'h08,
-                GPIO_OE_OFF    =   8'h0C,
-                GPIO_IM_OFF    =   8'h10,
-                GPIO_RIS_OFF   =   8'h14;
+                GPIO_DATA_OFF   =  8'h04,
+                GPIO_PU_OFF    =   8'h08, 
+                GPIO_PD_OFF    =   8'h0C,
+                GPIO_OE_OFF    =   8'h10,
+                GPIO_IM_OFF    =   8'h14,
+                GPIO_RIS_OFF   =   8'h18;
                 
    
     wire [31:0] GPIO_DATA_REG;
@@ -78,4 +78,6 @@ module AHB_GPIO_PORT #(parameter SZ=8) (
 
     assign IRQ = |(GPIO_IM_REG & GPIO_DATA_REG & ~GPIO_OE_REG);
 
+    assign GPIO_RIS_REG = GPIO_DATA_REG & ~GPIO_OE_REG;
+    
 endmodule
